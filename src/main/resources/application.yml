@@ -1,0 +1,23 @@
+wedul:
+  client:
+    url: localhost
+    port: 8081
+    timeout: 2000
+    connect-timeout: 300
+
+resilience4j:
+  circuitbreaker:
+    backends:
+      wedul:
+        ringBufferSizeInClosedState: 10
+        ringBufferSizeInHalfOpenState: 30
+        waitDurationInOpenState: 10000ms
+        failureRateThreshold: 20
+        registerHealthIndicator: false
+
+---
+spring:
+  profiles: develop
+
+server:
+  port: 8081
