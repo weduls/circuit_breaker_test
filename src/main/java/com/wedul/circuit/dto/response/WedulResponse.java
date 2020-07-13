@@ -7,10 +7,12 @@ import lombok.*;
 @NoArgsConstructor
 public class WedulResponse {
 
+    private String type;
     private boolean isExist;
 
     @Builder
-    public WedulResponse(boolean isExist) {
+    public WedulResponse(String type, boolean isExist) {
+        this.type = type;
         this.isExist = isExist;
     }
 

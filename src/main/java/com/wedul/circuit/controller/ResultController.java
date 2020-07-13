@@ -15,8 +15,13 @@ public class ResultController {
     private final ResultService service;
 
     @GetMapping("/result")
-    public Mono<WedulResponse> result(WedulRequest wedulRequest) {
+    public Mono<WedulResponse> result(WedulRequest wedulRequest) throws InterruptedException {
         return service.result(wedulRequest);
+    }
+
+    @GetMapping("/result-test")
+    public Mono<WedulResponse> resultTest(WedulRequest wedulRequest) {
+        return service.resultTest(wedulRequest);
     }
 
 }

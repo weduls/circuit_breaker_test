@@ -1,0 +1,33 @@
+wedul:
+  client:
+    url: localhost
+    port: 8081
+    timeout: 300
+    sockiet-timeout: 300
+    connect-timeout: 1000
+
+wedul-test:
+  client:
+    url: localhost
+    port: 8081
+    timeout: 3000
+    sockiet-timeout: 3000
+    connect-timeout: 3000
+
+resilience4j:
+  circuitbreaker:
+    backends:
+      wedul:
+        ringBufferSizeInClosedState: 13
+        ringBufferSizeInHalfOpenState: 30
+        waitDurationInOpenState: 10000ms
+        failureRateThreshold: 20
+        registerHealthIndicator: false
+
+
+server:
+  port: 8080
+---
+spring:
+  profiles: develop
+

@@ -1,0 +1,73 @@
+{
+  "groups": [
+    {
+      "name": "wedul-test.client",
+      "type": "com.wedul.circuit.config.WedulTestClientProperties",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties"
+    },
+    {
+      "name": "wedul.client",
+      "type": "com.wedul.circuit.config.WedulClientProperties",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wedul-test.client.connect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul-test.client.port",
+      "type": "java.lang.String",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties"
+    },
+    {
+      "name": "wedul-test.client.socket-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul-test.client.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul-test.client.url",
+      "type": "java.lang.String",
+      "sourceType": "com.wedul.circuit.config.WedulTestClientProperties"
+    },
+    {
+      "name": "wedul.client.connect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul.client.port",
+      "type": "java.lang.String",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties"
+    },
+    {
+      "name": "wedul.client.socket-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul.client.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "wedul.client.url",
+      "type": "java.lang.String",
+      "sourceType": "com.wedul.circuit.config.WedulClientProperties"
+    }
+  ],
+  "hints": []
+}

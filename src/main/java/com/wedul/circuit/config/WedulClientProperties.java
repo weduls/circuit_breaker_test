@@ -12,7 +12,8 @@ import org.springframework.stereotype.Component;
 public class WedulClientProperties {
 
     private int timeout;
-    private int connetTimeout;
+    private int connectTimeout;
+    private int socketTimeout;
     private String url;
     private String port;
 }
